@@ -70,6 +70,7 @@ function MyComponent() {
 
          <div className="mt-9 text-black max-md:max-w-full">Password</div>
          <input
+         type="password"
             value={data.password}
             onChange={(e) =>
                setDate((prev) => {
