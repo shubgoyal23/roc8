@@ -8,6 +8,7 @@ export default function Home() {
       <Link className="mx-3" href={"/login"} >Login</Link>
       <Link className="mx-3" href={"/register"}>Register</Link>
       <Link className="mx-3" href={"/dashboard"}>Dashboard</Link>
+      <Link className="mx-3" href={"/logout"}>logout</Link>
     </div>
   );
 }

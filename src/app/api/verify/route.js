@@ -103,7 +103,6 @@ export async function POST(request) {
       }
 
       const email = token.email;
-      console.log(email);
       const check = await client.query(
          "SELECT * FROM users WHERE email = ($1)",
          [email]
