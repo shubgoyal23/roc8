@@ -12,7 +12,7 @@ function MyComponent() {
       e.preventDefault();
       setLoading(true);
       setError(null);
-      const res = await fetch("http://localhost:3000/api/login", {
+      const res = await fetch("/api/login", {
          method: "post",
          body: JSON.stringify(data),
       });

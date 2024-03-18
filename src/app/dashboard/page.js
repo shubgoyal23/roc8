@@ -12,7 +12,7 @@ function Dashboard() {
    const perpage = 13;
 
    useEffect(() => {
-      fetch("http://localhost:3000/api/category")
+      fetch("/api/category")
          .then((res) => res.json())
          .then((data) => {
             const arr = data.data.map((item) => {
@@ -31,7 +31,7 @@ function Dashboard() {
    }, []);
 
    const changeInput = (id) => {
-      fetch("http://localhost:3000/api/category", {
+      fetch("/api/category", {
          method: "post",
          body: JSON.stringify({ productId: id }),
       })

@@ -12,7 +12,7 @@ function MyComponent() {
       e.preventDefault();
       setLoading(true);
       setError(null);
-      const res = await fetch("http://localhost:3000/api/register", {
+      const res = await fetch("/api/register", {
          method: "post",
          body: JSON.stringify(data),
       });
@@ -20,7 +20,7 @@ function MyComponent() {
       setError(r.message);
 
       if (res.status < 400) {
-        fetch("http://localhost:3000/api/verify");
+        fetch("/api/verify");
          router.replace("/verify");
          setLoading(false);
 

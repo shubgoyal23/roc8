@@ -34,7 +34,7 @@ function Verify() {
       setLoading(true)
 
       const code = inputs.join("");
-      const response = await fetch("http://localhost:3000/api/verify", {
+      const response = await fetch("/api/verify", {
          method: "post",
          body: JSON.stringify({ code }),
       });
